@@ -1,0 +1,124 @@
+inherited f_list_inscrit: Tf_list_inscrit
+  Left = 594
+  Height = 720
+  Top = 75
+  Width = 912
+  Caption = 'f_list_inscrit'
+  ClientHeight = 720
+  ClientWidth = 912
+  Color = clWhite
+  OnShow = FormShow
+  inherited pnl_titre: TPanel
+    Width = 912
+    Caption = 'Liste des inscrits'
+  end
+  inherited pnl_btn: TPanel
+    Top = 686
+    Width = 912
+    Caption = 'pnl_btn'
+    ClientWidth = 912
+    inherited pnl_btn_ligne: TPanel
+      Width = 513
+      ClientWidth = 513
+      inherited btn_line_detail: TSpeedButton
+        Left = 353
+        Hint = 'détail de l''infraction'
+        Width = 40
+        OnClick = btn_line_detailClick
+      end
+      inherited btn_line_add: TSpeedButton
+        Left = 393
+        Hint = 'ajouter une infraction'
+        Width = 40
+        OnClick = btn_line_addClick
+      end
+      inherited btn_line_delete: TSpeedButton
+        Left = 433
+        Hint = 'supprimer l''infraction'
+        Width = 40
+        OnClick = btn_line_deleteClick
+      end
+      inherited btn_line_edit: TSpeedButton
+        Left = 473
+        Hint = 'modifier l''infraction'
+        OnClick = btn_line_editClick
+      end
+      object lbl_nbligne: TLabel[4]
+        Left = 296
+        Height = 17
+        Top = 8
+        Width = 44
+        AutoSize = False
+        Caption = '22'
+        ParentColor = False
+      end
+      object tb_nbligne: TTrackBar[5]
+        Left = 24
+        Height = 25
+        Top = 0
+        Width = 268
+        Max = 22
+        OnChange = tb_nbligneChange
+        PageSize = 1
+        Position = 22
+        TabOrder = 0
+      end
+    end
+  end
+  inherited pnl_affi: TPanel
+    Height = 652
+    Width = 912
+    ClientHeight = 652
+    ClientWidth = 912
+    inherited sg_liste: TStringGrid
+      Height = 652
+      Width = 912
+      BorderStyle = bsNone
+      ColCount = 4
+      Columns = <      
+        item
+          PickList.Strings = (          )
+          Title.Color = 15461355
+          Title.Caption = 'n°'
+          Width = 80
+        end      
+        item
+          PickList.Strings = (          )
+          Title.Color = 15461355
+          Title.Caption = 'Identité'
+          Width = 287
+        end      
+        item
+          PickList.Strings = (          )
+          Title.Color = 15461355
+          Title.Caption = 'Commune domicile'
+          Width = 267
+        end      
+        item
+          PickList.Strings = (          )
+          Title.Color = 15461355
+          Title.Caption = 'Filière'
+          Width = 278
+        end>
+      GridLineWidth = 1
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goColSizing, goRowSelect]
+      RowCount = 5
+      ColWidths = (
+        80
+        287
+        267
+        278
+      )
+      RowHeights = (
+        22
+        22
+        22
+        22
+        22
+      )
+      Cells = (
+        0
+      )
+    end
+  end
+end

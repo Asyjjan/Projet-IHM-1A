@@ -1,0 +1,148 @@
+object f_gabarit: Tf_gabarit
+  Left = 457
+  Height = 800
+  Top = 145
+  Width = 1090
+  Caption = 'Gestion des Inscriptions'
+  ClientHeight = 780
+  ClientWidth = 1090
+  Color = 15461355
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -16
+  Font.Name = 'Calibri'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  Menu = mnu_main
+  OnShow = FormShow
+  LCLVersion = '1.6.0.4'
+  object pnl_ariane: TPanel
+    Left = 0
+    Height = 30
+    Top = 0
+    Width = 1090
+    Align = alTop
+    Caption = 'fil d''ariane'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Calibri'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+  end
+  object pnl_selection: TPanel
+    Left = 0
+    Height = 720
+    Top = 30
+    Width = 170
+    Align = alClient
+    Color = 15461355
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Calibri'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 1
+    OnClick = pnl_selectionClick
+  end
+  object pnl_info: TPanel
+    Left = 0
+    Height = 30
+    Top = 750
+    Width = 1090
+    Align = alBottom
+    Caption = 'message d''information'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Calibri'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 2
+  end
+  object pnl_travail: TPanel
+    Left = 170
+    Height = 720
+    Top = 30
+    Width = 920
+    Align = alRight
+    ClientHeight = 720
+    ClientWidth = 920
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Calibri'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 3
+    OnClick = pnl_travailClick
+    object lbl_acceuil: TLabel
+      Left = 64
+      Height = 184
+      Top = 240
+      Width = 784
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'Bienvenue dans l''application '#13#10'de gestion de la Scolarité'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlue
+      Font.Height = -64
+      Font.Name = 'Calibri'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object mnu_main: TMainMenu
+    left = 144
+    top = 64
+    object item_accueil: TMenuItem
+      Caption = 'Accueil'
+      OnClick = mnu_item_Click
+    end
+    object item_inscrit: TMenuItem
+      Caption = 'Inscrit'
+      OnClick = mnu_item_Click
+      object item_listeinscrit: TMenuItem
+        Caption = 'Liste'
+        OnClick = mnu_item_Click
+      end
+      object item_archive: TMenuItem
+        Caption = 'Archive'
+        OnClick = mnu_item_Click
+        object item_archiven1: TMenuItem
+          Caption = 'archive N-1'
+          OnClick = mnu_item_Click
+        end
+        object item_archiven2: TMenuItem
+          Caption = 'archive N-2'
+          OnClick = mnu_item_Click
+        end
+      end
+    end
+    object item_fil: TMenuItem
+      Caption = 'Filière'
+      OnClick = mnu_item_Click
+      object item_listefil: TMenuItem
+        Caption = 'Liste'
+        OnClick = mnu_item_Click
+      end
+      object item_stat: TMenuItem
+        Caption = 'Statistiques'
+        OnClick = mnu_item_Click
+      end
+    end
+    object item_quitter: TMenuItem
+      Caption = 'Quitter'
+      OnClick = item_quitterClick
+    end
+  end
+end

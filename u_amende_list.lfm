@@ -1,0 +1,116 @@
+inherited f_note_list: Tf_note_list
+  Left = 371
+  Height = 265
+  Top = 184
+  Width = 505
+  Caption = 'f_note_list'
+  ClientHeight = 265
+  ClientWidth = 505
+  OnCreate = FormCreate
+  inherited pnl_titre: TPanel
+    Height = 2
+    Width = 505
+    OnClick = pnl_titreClick
+  end
+  inherited pnl_btn: TPanel
+    Top = 231
+    Width = 505
+    ClientWidth = 505
+    OnClick = pnl_btnClick
+    inherited pnl_btn_page: TPanel
+      Width = 240
+      ClientWidth = 240
+      OnClick = pnl_btn_pageClick
+      inherited btn_page_prior: TSpeedButton
+        Left = 121
+      end
+      inherited btn_page_next: TSpeedButton
+        Left = 160
+      end
+      inherited btn_page_last: TSpeedButton
+        Left = 200
+      end
+      inherited btn_page_first: TSpeedButton
+        Left = 82
+      end
+    end
+    inherited pnl_btn_ligne: TPanel
+      Left = 240
+      Width = 265
+      ClientWidth = 265
+      OnClick = pnl_btn_ligneClick
+      inherited btn_line_detail: TSpeedButton
+        Left = 103
+        Hint = 'détail du délit'
+      end
+      inherited btn_line_add: TSpeedButton
+        Left = 144
+        Hint = 'ajouter un délit'
+        OnClick = btn_line_addClick
+      end
+      inherited btn_line_delete: TSpeedButton
+        Left = 183
+        Hint = 'supprimer le délit'
+        OnClick = btn_line_deleteClick
+      end
+      inherited btn_line_edit: TSpeedButton
+        Left = 225
+        Hint = 'modifier le délit'
+      end
+    end
+  end
+  inherited pnl_affi: TPanel
+    Height = 229
+    Top = 2
+    Width = 505
+    ClientHeight = 229
+    ClientWidth = 505
+    inherited sg_liste: TStringGrid
+      Height = 229
+      Width = 505
+      ColCount = 3
+      Columns = <      
+        item
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Calibri'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          PickList.Strings = (          )
+          Title.Caption = ''
+          Width = 170
+        end      
+        item
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Calibri'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          PickList.Strings = (          )
+          Title.Caption = ''
+          Width = 168
+        end      
+        item
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Calibri'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          PickList.Strings = (          )
+          Title.Caption = ''
+          Width = 168
+        end>
+      ColWidths = (
+        170
+        168
+        168
+      )
+      Cells = (
+        0
+      )
+    end
+  end
+end

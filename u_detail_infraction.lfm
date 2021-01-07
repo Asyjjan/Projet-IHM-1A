@@ -1,0 +1,640 @@
+object f_detail_inscription: Tf_detail_inscription
+  Left = 741
+  Height = 638
+  Top = 88
+  Width = 841
+  Caption = 'f_detail_inscription'
+  ClientHeight = 638
+  ClientWidth = 841
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -15
+  Font.Name = 'Calibri'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  LCLVersion = '1.6.0.4'
+  object pnl_titre: TPanel
+    Left = 0
+    Height = 34
+    Top = 0
+    Width = 841
+    Align = alTop
+    Caption = 'Détail d''une inscription'
+    TabOrder = 0
+  end
+  object pnl_btn: TPanel
+    Left = 0
+    Height = 40
+    Top = 598
+    Width = 841
+    Align = alBottom
+    ClientHeight = 40
+    ClientWidth = 841
+    TabOrder = 2
+    object btn_retour: TButton
+      Left = 744
+      Height = 25
+      Top = 8
+      Width = 83
+      Caption = 'Retour liste'
+      OnClick = btn_retourClick
+      TabOrder = 0
+    end
+    object btn_validerajout: TButton
+      Left = 648
+      Height = 25
+      Top = 8
+      Width = 83
+      Caption = 'Valider'
+      OnClick = btn_validerajoutClick
+      TabOrder = 1
+    end
+    object btn_annuler: TButton
+      Left = 744
+      Height = 25
+      Top = 8
+      Width = 83
+      Caption = 'Annuler'
+      OnClick = btn_retourClick
+      TabOrder = 2
+    end
+    object btn_validermodif: TButton
+      Left = 648
+      Height = 25
+      Top = 8
+      Width = 83
+      Caption = 'Valider'
+      OnClick = btn_validermodifClick
+      TabOrder = 3
+    end
+  end
+  object pnl_detail: TPanel
+    Left = 0
+    Height = 564
+    Top = 34
+    Width = 841
+    Align = alClient
+    ClientHeight = 564
+    ClientWidth = 841
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -15
+    Font.Name = 'Calibri'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 1
+    object pnl_contact: TPanel
+      Left = 1
+      Height = 116
+      Top = 186
+      Width = 839
+      Align = alTop
+      ClientHeight = 116
+      ClientWidth = 839
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -15
+      Font.Name = 'Calibri'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 2
+      object lbl_contact: TLabel
+        Left = -1
+        Height = 19
+        Top = 0
+        Width = 140
+        AutoSize = False
+        Caption = '  CONTACT'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -15
+        Font.Name = 'Calibri'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Layout = tlCenter
+        ParentColor = False
+        ParentFont = False
+      end
+      object edt_tel: TEdit
+        Left = 40
+        Height = 26
+        Top = 64
+        Width = 160
+        TabOrder = 0
+      end
+      object lbl_tel: TLabel
+        Left = 40
+        Height = 18
+        Top = 39
+        Width = 65
+        Caption = 'téléphone'
+        ParentColor = False
+      end
+      object edt_portable: TEdit
+        Left = 264
+        Height = 26
+        Top = 64
+        Width = 160
+        TabOrder = 1
+      end
+      object lbl_portable: TLabel
+        Left = 264
+        Height = 18
+        Top = 39
+        Width = 53
+        Caption = 'portable'
+        ParentColor = False
+      end
+      object edt_mail: TEdit
+        Left = 480
+        Height = 26
+        Top = 64
+        Width = 320
+        TabOrder = 2
+      end
+      object lbl_mail: TLabel
+        Left = 480
+        Height = 18
+        Top = 39
+        Width = 27
+        Caption = 'mail'
+        ParentColor = False
+      end
+      object lbl_tel_erreur: TLabel
+        Left = 40
+        Height = 15
+        Top = 88
+        Width = 75
+        Caption = 'lbl_tel_erreur'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Calibri'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object lbl_mail_erreur: TLabel
+        Left = 480
+        Height = 15
+        Top = 88
+        Width = 86
+        Caption = 'lbl_mail_erreur'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Calibri'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object pnl_adresse: TPanel
+      Left = 1
+      Height = 116
+      Top = 70
+      Width = 839
+      Align = alTop
+      ClientHeight = 116
+      ClientWidth = 839
+      TabOrder = 1
+      object lbl_adresse: TLabel
+        Left = -1
+        Height = 19
+        Top = 0
+        Width = 140
+        AutoSize = False
+        Caption = 'ADRESSE'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -15
+        Font.Name = 'Calibri'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Layout = tlCenter
+        ParentColor = False
+        ParentFont = False
+      end
+      object edt_adresse: TEdit
+        Left = 40
+        Height = 26
+        Top = 32
+        Width = 488
+        TabOrder = 0
+      end
+      object edt_codepostal: TEdit
+        Left = 40
+        Height = 26
+        Top = 72
+        Width = 112
+        TabOrder = 1
+      end
+      object edt_ville: TEdit
+        Left = 208
+        Height = 26
+        Top = 72
+        Width = 320
+        TabOrder = 2
+      end
+      object lbl_adresse_erreur: TLabel
+        Left = 40
+        Height = 15
+        Top = 56
+        Width = 104
+        Caption = 'lbl_adresse_erreur'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Calibri'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object lbl_codepostal_erreur: TLabel
+        Left = 40
+        Height = 15
+        Top = 96
+        Width = 122
+        Caption = 'lbl_codepostal_erreur'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Calibri'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object lbl_ville_erreur: TLabel
+        Left = 208
+        Height = 15
+        Top = 96
+        Width = 85
+        Caption = 'lbl_ville_erreur'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Calibri'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object pnl_ident: TPanel
+      Left = 1
+      Height = 69
+      Top = 1
+      Width = 839
+      Align = alTop
+      ClientHeight = 69
+      ClientWidth = 839
+      TabOrder = 0
+      object edt_num: TEdit
+        Left = 18
+        Height = 22
+        Top = 32
+        Width = 80
+        AutoSize = False
+        CharCase = ecUppercase
+        OnExit = edt_numExit
+        ReadOnly = True
+        TabOrder = 0
+      end
+      object lbl_num: TLabel
+        Left = 16
+        Height = 18
+        Top = 17
+        Width = 49
+        Caption = 'numéro'
+        ParentColor = False
+      end
+      object lbl_ident: TLabel
+        Left = 0
+        Height = 19
+        Top = 0
+        Width = 140
+        AutoSize = False
+        Caption = '  IDENTIFICATION'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -15
+        Font.Name = 'Calibri'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Layout = tlCenter
+        ParentColor = False
+        ParentFont = False
+      end
+      object lbl_num_erreur: TLabel
+        Left = 16
+        Height = 15
+        Top = 54
+        Width = 85
+        Caption = 'lbl_num_erreur'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Calibri'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object edt_nom: TEdit
+        Left = 288
+        Height = 26
+        Top = 32
+        Width = 160
+        TabOrder = 1
+      end
+      object lbl_nom: TLabel
+        Left = 288
+        Height = 18
+        Top = 16
+        Width = 28
+        Caption = 'nom'
+        ParentColor = False
+      end
+      object edt_prenom: TEdit
+        Left = 576
+        Height = 26
+        Top = 32
+        Width = 168
+        TabOrder = 2
+      end
+      object lbl_prenom: TLabel
+        Left = 576
+        Height = 18
+        Top = 16
+        Width = 49
+        Caption = 'prénom'
+        ParentColor = False
+      end
+      object cb_sexe: TComboBox
+        Left = 152
+        Height = 26
+        Top = 28
+        Width = 100
+        ItemHeight = 18
+        ItemIndex = 0
+        Items.Strings = (
+          'M'
+          'Mme'
+        )
+        TabOrder = 3
+        Text = 'M'
+      end
+      object lbl_nom_erreur: TLabel
+        Left = 288
+        Height = 15
+        Top = 56
+        Width = 85
+        Caption = 'lbl_nom_erreur'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Calibri'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object lbl_prenom_erreur: TLabel
+        Left = 576
+        Height = 15
+        Top = 54
+        Width = 103
+        Caption = 'lbl_prenom_erreur'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Calibri'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object pnl_note: TPanel
+      Left = 1
+      Height = 181
+      Top = 382
+      Width = 839
+      Align = alClient
+      ClientHeight = 181
+      ClientWidth = 839
+      TabOrder = 3
+      object pnl_note_list: TPanel
+        Left = 1
+        Height = 158
+        Top = 22
+        Width = 406
+        Align = alLeft
+        ClientHeight = 158
+        ClientWidth = 406
+        TabOrder = 0
+        object sg_liste: TStringGrid
+          Left = 1
+          Height = 156
+          Top = 1
+          Width = 404
+          Align = alClient
+          AlternateColor = 15461355
+          AutoFillColumns = True
+          Color = clDefault
+          ColCount = 3
+          Columns = <          
+            item
+              Font.CharSet = ANSI_CHARSET
+              Font.Color = clBlack
+              Font.Height = -16
+              Font.Name = 'Calibri'
+              Font.Pitch = fpVariable
+              Font.Quality = fqDraft
+              Title.Font.CharSet = ANSI_CHARSET
+              Title.Font.Color = clBlack
+              Title.Font.Height = -16
+              Title.Font.Name = 'Calibri'
+              Title.Font.Pitch = fpVariable
+              Title.Font.Quality = fqDraft
+              Title.Font.Style = [fsBold]
+              Title.Caption = 'UE'
+              Width = 127
+            end          
+            item
+              Font.CharSet = ANSI_CHARSET
+              Font.Color = clBlack
+              Font.Height = -16
+              Font.Name = 'Calibri'
+              Font.Pitch = fpVariable
+              Font.Quality = fqDraft
+              Title.Font.CharSet = ANSI_CHARSET
+              Title.Font.Color = clBlack
+              Title.Font.Height = -16
+              Title.Font.Name = 'Calibri'
+              Title.Font.Pitch = fpVariable
+              Title.Font.Quality = fqDraft
+              Title.Font.Style = [fsBold]
+              Title.Caption = 'Coefficient'
+              Width = 127
+            end          
+            item
+              Font.CharSet = ANSI_CHARSET
+              Font.Color = clBlack
+              Font.Height = -16
+              Font.Name = 'Calibri'
+              Font.Pitch = fpVariable
+              Font.Quality = fqDraft
+              Title.Font.CharSet = ANSI_CHARSET
+              Title.Font.Color = clBlack
+              Title.Font.Height = -16
+              Title.Font.Name = 'Calibri'
+              Title.Font.Pitch = fpVariable
+              Title.Font.Quality = fqDraft
+              Title.Font.Style = [fsBold]
+              Title.Caption = 'Note'
+              Width = 129
+            end>
+          FixedColor = clDefault
+          FixedCols = 0
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Name = 'Calibri'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          GridLineWidth = 0
+          Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goColSizing, goRowSelect, goHeaderPushedLook]
+          ParentFont = False
+          RowCount = 10
+          ScrollBars = ssVertical
+          TabOrder = 0
+          TitleFont.CharSet = ANSI_CHARSET
+          TitleFont.Color = clBlack
+          TitleFont.Height = -16
+          TitleFont.Name = 'Calibri'
+          TitleFont.Pitch = fpVariable
+          TitleFont.Quality = fqDraft
+          ColWidths = (
+            127
+            127
+            129
+          )
+        end
+      end
+      object pnl_note_titre: TPanel
+        Left = 1
+        Height = 21
+        Top = 1
+        Width = 837
+        Align = alTop
+        ClientHeight = 21
+        ClientWidth = 837
+        TabOrder = 1
+        object lbl_note: TLabel
+          Left = 1
+          Height = 19
+          Top = 1
+          Width = 835
+          Align = alClient
+          Caption = 'Relevé de Notes'
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -15
+          Font.Name = 'Calibri'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Layout = tlCenter
+          ParentBidiMode = False
+          ParentColor = False
+          ParentFont = False
+        end
+      end
+      object pnl_note_ajout: TPanel
+        Left = 407
+        Height = 158
+        Top = 22
+        Width = 431
+        Align = alClient
+        TabOrder = 2
+      end
+    end
+    object pnl_filiere: TPanel
+      Left = 1
+      Height = 80
+      Top = 302
+      Width = 839
+      Align = alTop
+      ClientHeight = 80
+      ClientWidth = 839
+      TabOrder = 4
+      object lbl_filiere: TLabel
+        Left = 1
+        Height = 19
+        Top = 0
+        Width = 140
+        AutoSize = False
+        Caption = 'FILIERE'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -15
+        Font.Name = 'Calibri'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Layout = tlCenter
+        ParentColor = False
+        ParentFont = False
+      end
+      object mmo_filiere: TMemo
+        Left = 224
+        Height = 48
+        Top = 24
+        Width = 456
+        Lines.Strings = (
+          'memo_filiere'
+        )
+        TabOrder = 0
+      end
+      object lbl_code_erreur: TLabel
+        Left = 40
+        Height = 15
+        Top = 59
+        Width = 87
+        Caption = 'lbl_code_erreur'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Calibri'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object edt_filiere: TEdit
+        Left = 40
+        Height = 26
+        Top = 33
+        Width = 99
+        AutoSize = False
+        TabOrder = 1
+      end
+      object cb_code: TComboBox
+        Left = 41
+        Height = 26
+        Top = 33
+        Width = 100
+        ItemHeight = 18
+        Items.Strings = (
+          '302-5KTMJ1'
+          '302-5KTMI7'
+        )
+        OnChange = cb_codeChange
+        TabOrder = 2
+      end
+    end
+  end
+end

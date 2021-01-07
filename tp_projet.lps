@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="17">
+      <Unit0>
+        <Filename Value="tp_projet.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="41" Y="11"/>
+        <UsageCount Value="74"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="u_gabarit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="f_gabarit"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="39"/>
+        <CursorPos X="82" Y="57"/>
+        <UsageCount Value="74"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="u_select_infraction.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="f_select_etu"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="57"/>
+        <CursorPos X="4" Y="80"/>
+        <UsageCount Value="74"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="u_list_infraction.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="f_list_inscrit"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="6"/>
+        <CursorPos X="20" Y="23"/>
+        <UsageCount Value="74"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="u_detail_infraction.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="f_detail_inscription"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <CursorPos X="43" Y="78"/>
+        <UsageCount Value="74"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="u_amende_list.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="f_note_list"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="34" Y="22"/>
+        <UsageCount Value="74"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="u_amende_ajout.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="f_amende_ajout"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="15"/>
+        <CursorPos X="34" Y="24"/>
+        <UsageCount Value="74"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="u_modele.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="15"/>
+        <CursorPos X="46" Y="52"/>
+        <UsageCount Value="66"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="u_liste.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="f_liste"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="69"/>
+        <CursorPos X="31" Y="121"/>
+        <UsageCount Value="50"/>
+        <Loaded Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\corrigé  appli à la fin du TP6-20200609\tp_projet.lpr"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="8"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="u_loaddataset.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="559"/>
+        <CursorPos X="42" Y="568"/>
+        <UsageCount Value="18"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\TPprojet noté-20200611\u_liste.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="28"/>
+        <CursorPos X="29" Y="35"/>
+        <UsageCount Value="9"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\TPprojet noté-20200611\u_loaddataset.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="619"/>
+        <UsageCount Value="9"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="C:\lazarus\components\ZEOSDBO-7.1.4-stable\src\component\ZAbstractRODataset.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="852"/>
+        <CursorPos Y="869"/>
+        <UsageCount Value="12"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="C:\lazarus\components\ZEOSDBO-7.1.4-stable\src\component\ZStoredProcedure.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="309"/>
+        <CursorPos Y="315"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="u_detail_inscription.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="46"/>
+        <CursorPos Y="79"/>
+        <UsageCount Value="10"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="u_detail_infraction (2).pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit16>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="u_modele.pas"/>
+        <Caret Line="68" Column="26" TopLine="46"/>
+      </Position1>
+      <Position2>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="419" Column="153" TopLine="390"/>
+      </Position2>
+      <Position3>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="380" Column="25" TopLine="363"/>
+      </Position3>
+      <Position4>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="375" Column="35" TopLine="358"/>
+      </Position4>
+      <Position5>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="427" Column="16" TopLine="402"/>
+      </Position5>
+      <Position6>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="376" Column="6" TopLine="369"/>
+      </Position6>
+      <Position7>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="420" Column="152" TopLine="391"/>
+      </Position7>
+      <Position8>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="378" Column="15" TopLine="370"/>
+      </Position8>
+      <Position9>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="314" Column="42" TopLine="296"/>
+      </Position9>
+      <Position10>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="334" Column="10" TopLine="316"/>
+      </Position10>
+      <Position11>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="326" Column="18" TopLine="309"/>
+      </Position11>
+      <Position12>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="330" Column="12" TopLine="317"/>
+      </Position12>
+      <Position13>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="333" Column="20" TopLine="316"/>
+      </Position13>
+      <Position14>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="332" Column="8" TopLine="316"/>
+      </Position14>
+      <Position15>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="349" Column="8" TopLine="326"/>
+      </Position15>
+      <Position16>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="333" Column="8" TopLine="321"/>
+      </Position16>
+      <Position17>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="350" Column="5" TopLine="321"/>
+      </Position17>
+      <Position18>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="335" Column="264" TopLine="318"/>
+      </Position18>
+      <Position19>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="337" Column="34" TopLine="318"/>
+      </Position19>
+      <Position20>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="335" Column="14" TopLine="318"/>
+      </Position20>
+      <Position21>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="333" Column="8" TopLine="318"/>
+      </Position21>
+      <Position22>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="334" Column="8" TopLine="309"/>
+      </Position22>
+      <Position23>
+        <Filename Value="u_list_infraction.pas"/>
+        <Caret Line="74" Column="151" TopLine="61"/>
+      </Position23>
+      <Position24>
+        <Filename Value="u_list_infraction.pas"/>
+        <Caret Column="24"/>
+      </Position24>
+      <Position25>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="60" Column="19" TopLine="49"/>
+      </Position25>
+      <Position26>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Line="6" Column="44"/>
+      </Position26>
+      <Position27>
+        <Filename Value="u_detail_infraction.pas"/>
+        <Caret Column="25"/>
+      </Position27>
+      <Position28>
+        <Filename Value="u_list_infraction.pas"/>
+        <Caret Line="76" Column="5"/>
+      </Position28>
+      <Position29>
+        <Filename Value="u_gabarit.pas"/>
+        <Caret Line="107" Column="3"/>
+      </Position29>
+      <Position30>
+        <Filename Value="tp_projet.lpr"/>
+        <Caret Line="22" Column="55"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
